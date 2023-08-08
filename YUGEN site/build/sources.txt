@@ -1,6 +1,0 @@
-1) Hero video: https://artlist.io/stock-footage/categories/technology?includedIds=197&sortId=1&terms=robot&row=0&page=1
-2) Instagram icon: <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
-3) Discord icon: <a href="https://www.flaticon.com/free-icons/discord" title="discord icons">Discord icons created by Pixel perfect - Flaticon</a>
-4) Twitter icon: <a href="https://www.flaticon.com/free-icons/twitter-logo" title="twitter logo icons">Twitter logo icons created by Md Tanvirul Haque - Flaticon</a>
-5) Scroll arrow animation: https://www.youtube.com/watch?v=Kks5qdW9EcE
-6) CSS Dynamic card hover effects: https://www.youtube.com/watch?v=Q22Tli-D4mw
