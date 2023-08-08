@@ -1,8 +1,10 @@
 
+/*
 particlesJS.load('particles-js', 'particlesjs-config.json',
 function() {
     console.log('particles.json loaded...');
 });
+*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.menu a');  // select all anchor tags within .menu
