@@ -1,6 +1,3 @@
-import * as THREE from 'https://unpkg.com/three@0.155.0/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.155.0/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'https://unpkg.com/three@0.155.0/examples/jsm/loaders/GLTFLoader.js';
 
 
 particlesJS.load('particles-js', 'particlesjs-config.json',
@@ -64,7 +61,7 @@ function init() {
   const modelContainer = document.getElementById('three-container');
   modelContainer.appendChild(renderer.domElement);
 
-  controls = new OrbitControls(camera, renderer.domElement);
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
   controls.enableZoom = false; //prevent scrolling in
   controls.enablePan = false //prevent panning
 
@@ -73,7 +70,7 @@ function init() {
 }
 
 function loadModel() {
-  const loader = new GLTFLoader();
+  const loader = new THREE.GLTFLoader();
   
   // Load the background model
   loader.load('scene2.gltf', function (gltf) {
