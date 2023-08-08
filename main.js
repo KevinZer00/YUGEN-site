@@ -1,5 +1,5 @@
 import * as THREE from './three.module.js';
-import { OrbitControls } from './OrbitControls.js';
+import { OrbitControls } from './YUGEN-site/OrbitControls.js';
 import { GLTFLoader } from './GLTFLoader.js';
 
 particlesJS.load('particles-js', 'particlesjs-config.json',
