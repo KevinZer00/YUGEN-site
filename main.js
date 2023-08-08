@@ -6,6 +6,10 @@ function() {
 });
 */
 
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'; 
+
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/controls/OrbitControls.js'; 
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'; 
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.menu a');  // select all anchor tags within .menu
 
@@ -62,7 +66,7 @@ function init() {
   const modelContainer = document.getElementById('three-container');
   modelContainer.appendChild(renderer.domElement);
 
-  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls = new OrbitControls(camera, renderer.domElement);
   controls.enableZoom = false; //prevent scrolling in
   controls.enablePan = false //prevent panning
 
@@ -71,7 +75,7 @@ function init() {
 }
 
 function loadModel() {
-  const loader = new THREE.GLTFLoader();
+  const loader = new GLTFLoader();
   
   // Load the background model
   loader.load('scene2.gltf', function (gltf) {
