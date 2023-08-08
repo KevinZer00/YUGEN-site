@@ -1,6 +1,6 @@
 import * as THREE from './three.module.js';
-import { OrbitControls } from './site1/OrbitControls.js';
-import { GLTFLoader } from './site1/GLTFLoader.js';
+import { OrbitControls } from './OrbitControls.js';
+import { GLTFLoader } from './GLTFLoader.js';
 
 particlesJS.load('particles-js', 'particlesjs-config.json',
 function() {
