@@ -8,7 +8,8 @@
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build --ssrManifest --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
-    "preview": "cross-env NODE_ENV=production node server"
+    "preview": "cross-env NODE_ENV=production node server",
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -20,6 +21,13 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
     "vite": "^4.0.4"
-  }
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
