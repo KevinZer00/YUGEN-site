@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import OrbitControls from 'three-orbit-controls';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 particlesJS.load('particles-js', 'particlesjs-config.json',
@@ -63,7 +63,7 @@ function init() {
   const modelContainer = document.getElementById('three-container');
   modelContainer.appendChild(renderer.domElement);
 
-  controls = new OrbitControls(camera, renderer.domElement);
+  controls = new OrbitControls(THREE)(camera, renderer.domElement);
   controls.enableZoom = false; //prevent scrolling in
   controls.enablePan = false //prevent panning
 
