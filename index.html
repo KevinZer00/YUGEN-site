@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="styles5.css">
+    <script src="https://kit.fontawesome.com/6004f020e8.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@<v0.152.2>/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@<v0.152.2>/examples/jsm/"
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "particles-js"></div>
+
+        
+
+
+
+        <section class="topbar">
+            <div class="logo-container">
+              <div class="logo">YUGEN</div>
+            </div>
+            <input id = "menu-toggle" type = "checkbox" />
+            <label class = "menu-button-container" for = "menu-toggle">
+              <div class = "menu-button"></div>
+            </label>
+            <ul class = "menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#journey">Our Journey</a></li>
+              <li><a href="#three-container">GEN.1X</a></li>
+              <li><a href="#team">Team</a></li>
+            </ul>
+        </section>
+
+
+
+        <div class = "hero"  id = "home">
+            <video autoplay loop muted id = "video-background">
+                <source src = "hero_vid.mp4" type = "video/mp4">
+            </video>
+            <div class = "herotext">
+                Pioneering The Next Generation of Mankind.
+            </div>
+            <div class = "arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+
+        <section id = "journey" class = "timeline">
+            <div class = "timeline-container">
+                <ul class = "timeline2">
+                    <li class="tl-item" style = "background-image: url('timeline1.jpg'); background-position: center center; background-size: cover;">
+                        <div class="tl-bg"></div>
+                        <div class="tl-year">
+                            <p class="f2 heading--sanSerif">2020</p>
+                        </div>
+                        <div class="tl-content">
+                            The concept design for android GEN.1X is proposed. The projected budget was approximated to be 3.5 billion USD.
+                        </div>
+                    </li>
+                    <li class="tl-item" style = "background-image: url('timeline2.jpg'); background-position: center center; background-size: cover;">
+                        <div class="tl-bg"></div>
+                        <div class="tl-year">
+                            <p class="f2 heading--sanSerif">2021</p>
+                        </div>
+                        <div class="tl-content">
+                            GEN.1X's concept and budget were approved. Scientists and engineers began collaborating.
+                        </div>
+                    </li>
+
+                    <li class="tl-item" style = "background-image: url('timeline3.jpg'); background-position: center center; background-size: cover;">
+                        <div class="tl-bg"></div>
+                        <div class="tl-year">
+                            <p class="f2 heading--sanSerif">2022</p>
+                        </div>
+                        <div class="tl-content">
+                            GEN.1X's concept and budget were approved. Scientists and engineers began collaborating.
+                        </div>
+                    </li>
+
+                    <li class="tl-item" style = "background-image: url('timeline4.jpg'); background-position: center center; background-size: cover;">
+                        <div class="tl-bg"></div>
+                        <div class="tl-year">
+                            <p class="f2 heading--sanSerif">2023</p>
+                        </div>
+                        <div class="tl-content">
+                            GEN.1X's concept and budget were approved. Scientists and engineers began collaborating.
+                        </div>
+                    </li>
+
+                  
+                    
+
+
+                </ul>
+            </div>
+        </section>
+
+
+        <div id = "three-container">
+            <div id = "blurred-bar-top"></div>
+            <div id = "blurred-bar-bottom"></div>
+            <div id = "three-model"></div>
+            <div class = "model-tooltip">
+                <span class = "tooltip-text">Drag to rotate</span>
+            </div>
+            <div class = "model-title">
+                ANDROID GEN.1X
+            </div>
+            <div class="model-description">
+                <div class="slideshow-container">
+                  <div class="slide active">
+                    <span class="description-text">
+                      GEN.1X is a cutting-edge android designed to assist workers in various industries. Standing at an impressive height of 7 feet, this advanced robotic companion is revolutionizing the way tasks are performed. Equipped with state-of-the-art technology and a sleek, futuristic design, GEN.1X is tailored to excel in a range of job functions.
+                      With its precision sensors, powerful computing capabilities, and advanced artificial intelligence, GEN.1X seamlessly integrates into tasks such as grocery deliveries, trash collection, and more. Its towering stature and robust build enable it to handle heavy loads and navigate through diverse environments with ease.
+                    </span>
+                  </div>
+                  <div class="slide">
+                    <span class="description-text">
+                      GEN.1X is equipped with the latest advancements in robotics, allowing it to perform tasks efficiently, accurately, and autonomously. Its versatile nature and adaptability make it a valuable asset to businesses and workers alike, streamlining operations and enhancing productivity.
+                      As an android engineered for efficiency and reliability, GEN.1X embodies the future of workforce augmentation. With its unwavering dedication and advanced capabilities, it's poised to become an indispensable companion in numerous industries, revolutionizing the way we work and paving the way for a new era of technological advancement.
+                    </span>
+                  </div>
+                  <div class="slide">
+                    <span class = "description-text">
+                      As of 2023, we have 14 functional units deployed at various locations. Each GEN.1X android has been equipped with additional tools to excel at their given assignments. By 2025, we aim to have 2000 units ready to be deployed.
+                    </span>
+                  </div>
+                </div>
+              
+                <div class="circle-container">
+                  <span class="circle active"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                </div>
+              </div>
+              
+            <div class="model-description2">
+                <ul>
+                    <li>Name: <span class="typewriter">GEN.1X</span></li>
+                    <li>Height: <span class="typewriter">7 feet (213 cm)</span></li>
+                    <li>Weight: <span class="typewriter">300 pounds (136 kg)</span></li>
+                    <li>Power Source: <span class="typewriter">Lithium-ion battery</span></li>
+                    <li>AI System: <span class="typewriter">LYFE (Learning Your Friendly Assistant)</span></li>
+                    <li>Communication: <span class="typewriter">Advanced voice recognition and natural language processing</span></li>
+                    <li>Mobility: <span class="typewriter">Foot base with omnidirectional movement capabilities</span></li>
+                    <li>Sensors: <span class="typewriter">High-resolution cameras and LIDAR for environment perception</span></li>
+                    <li>Manipulation: <span class="typewriter">Robotic arms with multi-jointed end effectors for object handling</span></li>
+                    <li>Payload Capacity: <span class="typewriter">100 pounds (45 kg)</span></li>
+                </ul>
+            </div> 
+        </div>
+
+
+        <div class = "about">
+            <div class = "about-title-container">
+                <div class = "about-title">
+                    Who We Are
+                </div>
+            </div>
+            <div class = "about-desc-container">
+                <div class = "about-desc">
+                    We are Engineers. Dreamers. Innovators. Humans. Our curiousity knows no bounds. By joining forces with some of the world's 
+                    leading researchers, we have paved the way for the technological era. Our successful production of the first generation android GEN.1X
+                    greatly impacted the way we, as humans, see life. As a company, we aim to blur the line between reality and science fiction. We are YUGEN. 
+                </div>
+            </div>
+
+            
+
+
+
+
+
+            <div id = "team" class = "team-container">
+                <div class = "team-title-container">
+                    <div class = "team-title">
+                        Our Team
+                    </div>
+                </div>
+
+                <div class = "team-cards">
+                    <div class = "team-row1">
+                        <div class = "cardContainer">
+                            <div class = "card">
+                                <div class = "content">
+                                    <div class = "imgBox">
+                                        <img src = "person.png" class = "person3">
+                                    </div>
+                                    <div class = "contentBox">
+                                        <h3>Kevin Yu<br><span>CEO/Founder</span></h3>
+                                    </div>
+                                </div>
+                                <ul class = "sci">
+                                    <li style = "--i:1">
+                                        <a href = "#"><i class="fa-brands fa-discord" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:2">
+                                        <a href = "#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:3">
+                                        <a href = "#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class = "cardContainer">
+                            <div class = "card">
+                                <div class = "content">
+                                    <div class = "imgBox">
+                                        <img src = "person.png" class = "person3">
+                                    </div>
+                                    <div class = "contentBox">
+                                        <h3>Elizabeth Tellez, PhD<br><span>Lead Robotics Engineer</span></h3>
+                                    </div>
+                                </div>
+                                <ul class = "sci">
+                                    <li style = "--i:1">
+                                        <a href = "#"><i class="fa-brands fa-discord" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:2">
+                                        <a href = "#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:3">
+                                        <a href = "#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class = "cardContainer">
+                            <div class = "card">
+                                <div class = "content">
+                                    <div class = "imgBox">
+                                        <img src = "person.png" class = "person3">
+                                    </div>
+                                    <div class = "contentBox">
+                                        <h3>Hiroshi Tanaka<br><span>Robotics Engineer </span></h3>
+                                    </div>
+                                </div>
+                                <ul class = "sci">
+                                    <li style = "--i:1">
+                                        <a href = "#"><i class="fa-brands fa-discord" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:2">
+                                        <a href = "#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:3">
+                                        <a href = "#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "team-row2">
+                        <div class = "cardContainer">
+                            <div class = "card">
+                                <div class = "content">
+                                    <div class = "imgBox">
+                                        <img src = "person.png" class = "person3">
+                                    </div>
+                                    <div class = "contentBox">
+                                        <h3>John Chen<br><span>AI Developer</span></h3>
+                                    </div>
+                                </div>
+                                <ul class = "sci">
+                                    <li style = "--i:1">
+                                        <a href = "#"><i class="fa-brands fa-discord" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:2">
+                                        <a href = "#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:3">
+                                        <a href = "#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class = "cardContainer">
+                            <div class = "card">
+                                <div class = "content">
+                                    <div class = "imgBox">
+                                        <img src = "person.png" class = "person3">
+                                    </div>
+                                    <div class = "contentBox">
+                                        <h3>Sofia Rodriguez<br><span>Marketing Director</span></h3>
+                                    </div>
+                                </div>
+                                <ul class = "sci">
+                                    <li style = "--i:1">
+                                        <a href = "#"><i class="fa-brands fa-discord" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:2">
+                                        <a href = "#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:3">
+                                        <a href = "#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class = "cardContainer">
+                            <div class = "card">
+                                <div class = "content">
+                                    <div class = "imgBox">
+                                        <img src = "person.png" class = "person3">
+                                    </div>
+                                    <div class = "contentBox">
+                                        <h3>Anita Gupta, PhD<br><span>Lead Research Scientist</span></h3>
+                                    </div>
+                                </div>
+                                <ul class = "sci">
+                                    <li style = "--i:1">
+                                        <a href = "#"><i class="fa-brands fa-discord" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:2">
+                                        <a href = "#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></i></a>
+                                    </li>
+                                    <li style = "--i:3">
+                                        <a href = "#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="particles.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type = "module" src = "main.js"></script>
+</body>
+</html>

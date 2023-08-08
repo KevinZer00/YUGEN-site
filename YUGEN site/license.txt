@@ -1,0 +1,11 @@
+Model Information:
+* title:	White Bot
+* source:	https://sketchfab.com/3d-models/white-bot-c74f5a815ac24c9f8bc34d8db0fb844d
+* author:	gorelka (https://sketchfab.com/gorelka)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "White Bot" (https://sketchfab.com/3d-models/white-bot-c74f5a815ac24c9f8bc34d8db0fb844d) by gorelka (https://sketchfab.com/gorelka) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
