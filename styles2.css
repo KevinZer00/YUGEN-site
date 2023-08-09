@@ -245,10 +245,11 @@
   .about-desc {
     font-size: 18px;
     width: auto;
-    /* allow it to flex with the screen width */
     margin-left: 10px;
     margin-right: 10px;
     padding: 0.5em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .about-title {
@@ -265,11 +266,16 @@
   .cardContainer {
     display: flex;
     flex-direction: column;
-    /* stack the cards vertically */
+   
     align-items: center;
-    /* center them horizontally */
+    
   }
 
+  .cardContainer .card {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
   .cardContainer .card .content .contentBox h3 {
     font-size: 16px;
     margin: 10px 0 5px;
