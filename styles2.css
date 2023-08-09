@@ -116,31 +116,31 @@
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
-    &:hover, &:active, &.active {
-      width: 100% !important;
-      &:after {
-          opacity: 0;
-      }
+    .tl-item.active {
+        width: 100% !important;
+        &:after {
+            opacity: 0;
+        }
 
-      &:before {
-          opacity: 1;
-          transform: translate3d(0, 0, 0) translateY(0);
-          transition: opacity 1s ease, transform 1s ease 0.25s;
-      }
+        &:before {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) translateY(0);
+            transition: opacity 1s ease, transform 1s ease 0.25s;
+        }
 
-      .tl-content {
-          opacity: 1;
-          transform: translateY(0);
-          transition: all 0.75s ease 0.5s;
-      }
+        .tl-content {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.75s ease 0.5s;
+        }
 
-      .tl-bg {
-          filter: grayscale(0);
-      }
+        .tl-bg {
+            filter: grayscale(0);
+        }
 
-      .tl-year {
-          opacity: 0;
-      }
+        .tl-year {
+            opacity: 0;
+        }
     }
   }
 
