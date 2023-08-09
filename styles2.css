@@ -79,21 +79,24 @@
   .timeline2 {
     flex-direction: column;
   }
-
   .tl-item {
     font-family: Future;
     font-size: 50px;
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     position: relative;
     width: 100%;
     height: auto;
     min-height: 400px;
     overflow: hidden;
+    -webkit-transition: width 0.5s ease;
     transition: width 0.5s ease;
+    will-change: transform, opacity;
 
     &:before,
     &:after {
-      transform: translate3d(0, 0, 0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
       content: '';
       position: absolute;
       left: 0;
@@ -105,6 +108,7 @@
     &:after {
       background: transparentize(#031625, 0.15);
       opacity: 1;
+      -webkit-transition: opacity 0.5s ease;
       transition: opacity 0.5s ease;
     }
 
@@ -112,25 +116,31 @@
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #80aca8 75%);
       z-index: 1;
       opacity: 0;
-      transform: translate3d(0, 0, 0) translateY(50%);
+      -webkit-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
      &.tl-item.in-view{
-        width: 100% !important;
+        width: 100%;
         &:after {
             opacity: 0;
         }
 
         &:before {
             opacity: 1;
-            transform: translate3d(0, 0, 0) translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transition: opacity 1s ease, transform 1s ease 0.25s;
             transition: opacity 1s ease, transform 1s ease 0.25s;
         }
 
         .tl-content {
             opacity: 1;
+            -webkit-transform: translateY(0);
             transform: translateY(0);
+            -webkit-transition: all 0.75s ease 0.5s;
             transition: all 0.75s ease 0.5s;
         }
 
@@ -142,10 +152,11 @@
             opacity: 0;
         }
     }
-  }
+}
 
-  .tl-content {
-    transform: translate3d(0, 0, 0) translateY(25px);
+.tl-content {
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
     position: relative;
     z-index: 1;
     text-align: center;
@@ -162,14 +173,16 @@
       font-size: 1.44rem;
       font-weight: normal;
     }
-  }
+}
 
-  .tl-year {
+.tl-year {
     opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
     border-top: 4px solid #000000;
@@ -180,7 +193,8 @@
       font-size: 1.728rem;
       line-height: 0;
     }
-  }
+}
+
 
 
   #three-container {
