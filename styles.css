@@ -440,15 +440,6 @@ html, body {
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
-#blurred-bar-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px; 
-    z-index: 1; 
-    backdrop-filter: blur(10px); 
-  }
   
   
 

@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 function getScaleBasedOnScreenWidth() {
-  if (window.innerWidth <= 400) {
+  if (window.innerWidth <= 450) {
         return {
             scale: 0.70,  // Half the size when screen width is <= 360px
-            yOffset: 0.5  // Adjust the y position when screen width is <= 360px (you can adjust this value)
+            yOffset: 0.7  // Adjust the y position when screen width is <= 360px (you can adjust this value)
         };
     }
     return {
@@ -66,7 +66,11 @@ function init() {
   const modelContainer = document.getElementById('three-container');
   modelContainer.appendChild(renderer.domElement);
 
+
+
   controls = new OrbitControls(camera, renderer.domElement);
+  controls.minPolarAngle = Math.PI/2;
+  controls.maxPolarAngle = Math.PI/2;
   controls.enableZoom = false; //prevent scrolling in
   controls.enablePan = false //prevent panning
 

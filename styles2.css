@@ -186,20 +186,23 @@
 
 
   #three-container {
-    height: 110vh;
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-color: #eaedf2;
   }
 
   .model-title {
     font-size: 30px;
-    margin-top: -1em;
+    margin-top: -1.5em;
+    height: 1.25em;
   }
 
   .model-description {
-    left: 8%;
-    bottom: 10%;
+    left: 10%;
+    bottom: 5%;
     width: 70vw;
-    height: 8em;
+    height: 10em;
     background-size: 40px 40px;
     margin-top: 20em;
 
@@ -212,7 +215,7 @@
     align-items: center;
     justify-content: left;
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
   }
 
 
@@ -221,17 +224,18 @@
   }
 
   .model-tooltip {
-    height: 2em;
-    bottom: 5%;
+    height: 2%;
+    bottom: 32.5%;
     left: 50%;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bold;
   }
 
   .tooltip-text {
     color: black;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
   }
 
 
