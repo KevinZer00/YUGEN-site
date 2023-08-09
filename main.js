@@ -1,15 +1,15 @@
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'; 
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/controls/OrbitControls.js'; 
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'; 
 
-/*
+
 particlesJS.load('particles-js', 'particlesjs-config.json',
 function() {
     console.log('particles.json loaded...');
 });
-*/
 
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'; 
 
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/controls/OrbitControls.js'; 
-import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'; 
+
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.menu a');  // select all anchor tags within .menu
 
@@ -52,7 +52,7 @@ function init() {
   scene = new THREE.Scene();
   camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.5, 5000);
   
-  const ambientLight = new THREE.AmbientLight(0xaaaaaa, 1); // Add ambient light
+  const ambientLight = new THREE.AmbientLight(0xFFFAF0, 1); // Add ambient light
   scene.add(ambientLight);
 
 
@@ -103,22 +103,22 @@ function loadModel() {
     const distance = maxDim / Math.tan(Math.PI * camera.fov / 360);
     camera.position.set(0, 0, distance * 0.060);
 
-    const ceilingLight1 = new THREE.DirectionalLight(0xeeeeee, 0.25); // Add a directional light
+    const ceilingLight1 = new THREE.DirectionalLight(0xFFFAF0, 0.25); // Add a directional light
     ceilingLight1.position.set(0, 5, 0); // Set the position of the light
     ceilingLight1.castShadow = true;
     scene.add(ceilingLight1);
 
-    const ceilingLight2 = new THREE.DirectionalLight(0xeeeeee, 0.25); // Add another directional light
+    const ceilingLight2 = new THREE.DirectionalLight(0xFFFAF0, 0.25); // Add another directional light
     ceilingLight2.position.set(0, 5, 0); // Set the position of the light
     ceilingLight2.castShadow = true;
     scene.add(ceilingLight2);
     
-    const ceilingLight3 = new THREE.DirectionalLight(0xeeeeee, 0.25); // Add another directional light
+    const ceilingLight3 = new THREE.DirectionalLight(0xFFFAF0, 0.25); // Add another directional light
     ceilingLight3.position.set(5, 0, 0); // Set the position of the light\
     ceilingLight3.castShadow = true;
     scene.add(ceilingLight3);
 
-    const ceilingLight4 = new THREE.DirectionalLight(0xeeeeee, 0.5); // Add another directional light
+    const ceilingLight4 = new THREE.DirectionalLight(0xFFFAF0, 0.25); // Add another directional light
     ceilingLight4.position.set(0, 0, 5); // Set the position of the light
     ceilingLight4.castShadow = true;
     scene.add(ceilingLight4);
