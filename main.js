@@ -299,7 +299,23 @@ startTypewriterAnimation(currentSlide);
         }
     });
 
-
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get all timeline items
+      let tlItems = document.querySelectorAll('.tl-item');
+      
+      // Add touchstart and touchend event listeners to each item
+      tlItems.forEach(item => {
+        item.addEventListener('touchstart', function() {
+          // Replicate the hover effect
+          this.classList.add('active');
+        });
+        
+        item.addEventListener('touchend', function() {
+          // Remove the hover effect
+          this.classList.remove('active');
+        });
+      });
+    });
 
     
 
