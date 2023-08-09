@@ -37,7 +37,7 @@ function getScaleBasedOnScreenWidth() {
   if (window.innerWidth <= 450) {
         return {
             scale: 0.70,  // Half the size when screen width is <= 360px
-            yOffset: 0.7  // Adjust the y position when screen width is <= 360px (you can adjust this value)
+            yOffset: 0.6  // Adjust the y position when screen width is <= 360px (you can adjust this value)
         };
     }
     return {
