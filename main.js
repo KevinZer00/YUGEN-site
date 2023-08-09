@@ -290,19 +290,32 @@ startTypewriterAnimation(currentSlide);
   });
   
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var items = document.querySelectorAll('.tl-item');
 
-    items.forEach(function(item) {
-        item.addEventListener('click', function() {
-            // First, remove 'active' class from all items
-            items.forEach(function(innerItem) {
-                innerItem.classList.remove('active');
-            });
+  document.addEventListener("DOMContentLoaded", function() {
+    // Define the options for the Intersection Observer
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
 
-            // Then, add 'active' class to the clicked item
-            this.classList.add('active');
+    // The callback for the Intersection Observer
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            } else {
+                entry.target.classList.remove('in-view');
+            }
         });
+    };
+
+    // Create the observer
+    const observer = new IntersectionObserver(callback, options);
+
+    // Start observing all the .tl-item elements
+    document.querySelectorAll('.tl-item').forEach(item => {
+        observer.observe(item);
     });
 });
 
