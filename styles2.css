@@ -116,7 +116,7 @@
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
-    .tl-item.active {
+     &:hovered{
         width: 100% !important;
         &:after {
             opacity: 0;

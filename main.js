@@ -290,15 +290,24 @@ startTypewriterAnimation(currentSlide);
   });
   
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var items = document.querySelectorAll('.tl-item');
+  document.addEventListener("DOMContentLoaded", function() {
+    var tlItems = document.querySelectorAll('.tl-item');
 
-    items.forEach(function(item) {
-        item.addEventListener('click', function() {
-            item.classList.toggle('active');
+    tlItems.forEach(function(item) {
+        item.addEventListener('touchstart', function() {
+            // Remove 'hovered' class from all other items
+            tlItems.forEach(function(innerItem) {
+                if (innerItem !== item) {
+                    innerItem.classList.remove('hovered');
+                }
+            });
+
+            // Toggle 'hovered' class for the touched item
+            item.classList.toggle('hovered');
         });
     });
 });
+
 
 
     
