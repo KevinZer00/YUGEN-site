@@ -193,16 +193,17 @@
   }
 
   .model-title {
-    font-size: 30px;
-    margin-top: -1.5em;
-    height: 1.25em;
+
+    font-size: 26px;
+    margin-top: -0.5em;
+    height: 1em;
   }
 
   .model-description {
-    left: 10%;
+    left: 8%;
     bottom: 5%;
     width: 70vw;
-    height: 10em;
+    height: 8em;
     background-size: 40px 40px;
     margin-top: 20em;
 
@@ -215,7 +216,7 @@
     align-items: center;
     justify-content: left;
     text-align: center;
-    font-size: 10px;
+    font-size: 9px;
   }
 
 
@@ -225,7 +226,7 @@
 
   .model-tooltip {
     height: 2%;
-    bottom: 32.5%;
+    bottom: 30%;
     left: 50%;
     font-size: 12px;
     font-weight: bold;
