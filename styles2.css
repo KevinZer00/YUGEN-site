@@ -81,7 +81,7 @@
   }
 
 
-.tl-item {
+  .tl-item {
     font-family: Future;
     font-size: 50px;
     -webkit-transform: translateY(0);
@@ -91,42 +91,43 @@
     height: 50vh;
     min-height: 400px;
     overflow: hidden;
-    
-  
 
-     &.tl-item.in-view{
-        width: 100%;
-        &:after {
-            opacity: 0;
-        }
 
-        &:before {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            -webkit-transition: opacity 1s ease, transform 1s ease 0.25s;
-            transition: opacity 1s ease, transform 1s ease 0.25s;
-        }
 
-        .tl-content {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            -webkit-transition: all 0.75s ease 0.5s;
-            transition: all 0.75s ease 0.5s;
-        }
+    &.tl-item.in-view {
+      width: 100%;
 
-        .tl-bg {
-            filter: grayscale(0);
-        }
+      &:after {
+        opacity: 0;
+      }
 
-        .tl-year {
-            opacity: 0;
-        }
+      &:before {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: opacity 1s ease, transform 1s ease 0.25s;
+        transition: opacity 1s ease, transform 1s ease 0.25s;
+      }
+
+      .tl-content {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: all 0.75s ease 0.5s;
+        transition: all 0.75s ease 0.5s;
+      }
+
+      .tl-bg {
+        filter: grayscale(0);
+      }
+
+      .tl-year {
+        opacity: 0;
+      }
     }
-}
+  }
 
-.tl-content {
+  .tl-content {
     -webkit-transform: translateY(25px);
     transform: translateY(25px);
     position: relative;
@@ -144,9 +145,9 @@
       font-size: 1.44rem;
       font-weight: normal;
     }
-}
+  }
 
-.tl-year {
+  .tl-year {
     opacity: 1;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
@@ -164,7 +165,7 @@
       font-size: 1.728rem;
       line-height: 0;
     }
-}
+  }
 
 
 
@@ -249,16 +250,16 @@
   .cardContainer {
     display: flex;
     flex-direction: column;
-   
+
     align-items: center;
-    
+
   }
 
   .cardContainer .card {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-  
+
   .cardContainer .card .content .contentBox h3 {
     font-size: 16px;
     margin: 10px 0 5px;
