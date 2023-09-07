@@ -93,6 +93,9 @@
     overflow: hidden;
 
 
+    &:hover {
+        width: 100% !important;
+    }
 
     &.tl-item.in-view {
       width: 100%;

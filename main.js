@@ -42,12 +42,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function getScaleBasedOnScreenWidth() {
-  if (window.innerWidth <= 450) {
+  if (window.innerWidth <= 400) {
     return {
-      scale: 0.70,  //half the size when screen width is <= 360px
+      scale: 0.70,  //half the size when screen width is <= 400px
       yOffset: 0.6  //adjust the y position when screen width is <= 360px (you can adjust this value)
     };
   }
+
+  if (window.innerWidth >= 401 && window.innerWidth <= 800 ) {
+    return {
+      scale: 0.72,  //half the size when screen width is <= 400px
+      yOffset: 0.6  //adjust the y position when screen width is <= 360px (you can adjust this value)
+    };
+  }
+
+  if (window.innerWidth >= 801 && window.innerWidth <= 1000 ) {
+    return {
+      scale: 0.74,  //half the size when screen width is <= 400px
+      yOffset: 0.6  //adjust the y position when screen width is <= 360px (you can adjust this value)
+    };
+  }
+
+  if (window.innerWidth >= 1001 && window.innerWidth <= 1200 ) {
+    return {
+      scale: 0.76,  //half the size when screen width is <= 400px
+      yOffset: 0.6  //adjust the y position when screen width is <= 360px (you can adjust this value)
+    };
+  }
+
   return {
     scale: 1,  //default scale (original size)
     yOffset: -0.25  //default y position (from your original code)
