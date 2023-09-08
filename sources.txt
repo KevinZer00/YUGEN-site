@@ -4,3 +4,9 @@
 4) Twitter icon: <a href="https://www.flaticon.com/free-icons/twitter-logo" title="twitter logo icons">Twitter logo icons created by Md Tanvirul Haque - Flaticon</a>
 5) Scroll arrow animation: https://www.youtube.com/watch?v=Kks5qdW9EcE
 6) CSS Dynamic card hover effects: https://www.youtube.com/watch?v=Q22Tli-D4mw
+
+
+# YUGEN Robotics
+Website for fictional robotics company. This site utilizes the Three.JS framework to implement a 3D model of a robot (provided by Sketchfab). 
+The orbit controls allows for full 180 degree rotation of the model. 
+![](Animation.gif)
